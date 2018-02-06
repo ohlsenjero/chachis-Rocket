@@ -1,0 +1,400 @@
+@font-face {
+    font-family: 'garagegothic-boldregular';
+    src: url('fonts/garagegothic-bold-webfont.eot');
+    src: url('fonts/garagegothic-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/garagegothic-bold-webfont.woff') format('woff'),
+         url('fonts/garagegothic-bold-webfont.ttf') format('truetype'),
+         url('fonts/garagegothic-bold-webfont.svg#garagegothic-boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body, ul, li{
+	margin:0px;
+	padding:0px;
+}
+
+body, html {
+background: #000;
+
+}
+
+.wrapper {
+	width: 70%;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+.gamebox {
+	margin-top: 4%;
+	display: none;
+	position: relative;
+	display: none;
+}
+
+.playagainwin {
+	display: none;
+	height: 600px;
+	width: 100%;
+	margin: 4% auto 0 auto;
+	float: none;
+
+}
+
+.playagainloose {
+	display: none;
+	height: 600px;
+	width: 100%;
+	background-color: red;
+	margin: 4% auto 0 auto;
+	float: none;
+}
+
+
+.again {
+	position: absolute;
+	width: 15%;
+	height: 60px;
+	font-size: 1.2em;
+	border-radius: 5px;
+	background-color: black;
+	color: #caceff;
+	top: 6%;
+	left: 6%;
+}
+
+.reload {
+	background: #fff;
+	color: #000;
+	padding: 10px;
+	border: 1px solid #caceff;
+	border-radius: 5px;
+	text-decoration: none;
+	position: absolute;
+	top:18.5%;
+	left: 6%;
+	font-size: 1.1em;
+	text-align: center;
+	width: 8%;
+}
+
+.intro {
+	display: block;
+	height: 600px;
+	width: 100%;
+	margin: 4% auto 2% auto;
+	float: none;
+	border: 2px solid #9ce1e0;
+}
+
+.intro img {
+	width:96%;
+	position: absolute;
+	top:7%;
+	left:3%;
+}
+
+.intro button {
+	width: 80%;
+	height: 50px;
+	font-size: 1.3em;
+	border-radius: 5px;
+	background-color: black;
+	color: #caceff;
+	margin-top:10%;
+
+}
+
+
+.introbuttons {
+	position: absolute;
+	width: 20%;
+	height: 160px;
+	bottom: 0;
+	right: 2%;
+	z-index:10;
+}
+
+
+.rules {
+	display: none;
+	height: 600px;
+	width:100%;
+}
+
+.rulesbox {
+	width: 90%;
+	height: 380px;
+	position: absolute;
+	top:6%;
+	left: 5%;
+	background-color:#000;
+	overflow: auto;
+	border: 2px solid #9ce1e0;
+}
+
+.rulesbox p {
+	color: #fff;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 7%;
+	line-height: 1.7em;
+	font-size: 1.3em;
+	font-family: helvetica;
+}
+
+
+.gameplay {
+	width: 100%;
+	height: 140px;
+	background-image: url(img/screen.png);
+	background-size: cover;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+
+.screenblock {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	background-color: black;
+	z-index: 15;
+}
+
+
+
+.imagen{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 140px;
+}
+
+.gameplay ul{
+	list-style:none;
+	width: 60%;
+	text-align: center;
+	float: right;
+	margin-top: 10%;
+
+	position: absolute;
+	top:-30px;
+	right: 0;
+
+}
+
+.gameplay li {
+	float: left;
+	width:25%;
+	margin-left: 3%;
+
+}
+
+.gameplay button {
+	width: 100%;
+	height: 50px;
+	font-size: 1.3em;
+	border-radius: 5px;
+	background-color: black;
+	color: #caceff;
+
+}
+
+
+button:hover {
+	cursor: pointer;
+}
+
+
+
+/*//////////////////////////////////   1 0     S T A G E S   ////////////////////////////////////////*/
+
+
+
+.arbol, .casa, .sombrero, .cielo, .avion, .helado, .vestido, .caballo, .pajaro, .perro, .cascada {
+	display: none;
+}
+
+
+
+
+ 
+/*///////////////////////////   R O C K E T     S C R E E N   ///////////////////////////////////////////////*/
+
+
+
+
+.screen {
+	width: 100%;
+	height: 430px;
+	margin: 0 auto 50px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+canvas {
+
+	background-color: red;
+	display: block;
+	z-index: 50;
+}
+
+#canvas2 {
+	position: absolute;
+	background-color: transparent;
+	display: block;
+	z-index: 30;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.win {
+	background-image: url(img/win.gif); 
+}
+
+
+
+#rocket {
+	position: absolute;
+	left:100px;
+	top:60%;
+	display: none;
+	z-index: 20;
+}
+
+.rocket {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+	z-index: 21;
+}
+.tail {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+}
+
+
+.rock {
+
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-image: url(img/piedra.png);
+	top:-51px;
+	left: 600px;
+
+}
+
+
+.speedometer {
+	background-image: url(img/speedometer.png);
+	background-size: cover;
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+.speedneedle {
+
+	width: 134px;
+	height: 125px;
+	position: absolute;
+	right: -8px;
+	bottom: 0;
+}
+
+/*Winning*/.distance {
+	background-image: url(img/distance.png);
+	background-size: cover;	
+	width: 134px;
+	height: 125px;
+	position: absolute;
+	right: 170px;
+	bottom: 20px;
+}	
+
+.distance-1 {
+	background-image: url(img/distance-1.png);
+}
+.distance-2 {
+	background-image: url(img/distance-2.png);
+}
+.distance-3 {
+	background-image: url(img/distance-3.png);
+}
+.distance-4 {
+	background-image: url(img/distance-4.png);
+}
+.distance-5 {
+	background-image: url(img/distance-5.png);
+}
+.distance-6 {
+	background-image: url(img/distance-6.png);
+}
+
+.distance-7 {
+	background-image: url(img/distance-7.png);
+}
+
+.distance-8 {
+	background-image: url(img/distance-8.png);
+}
+
+.distance-9 {
+	background-image: url(img/distance-9.png);
+}
+.distance-10 {
+	background-image: url(img/distance-10.png);
+}
+
+
+.rtate {
+transform:rotate(90deg);
+-ms-transform:rotate(90deg); /* IE 9 */
+-moz-transform:rotate(90deg); /* Firefox */
+-webkit-transform:rotate(90deg); /* Safari and Chrome */
+-o-transform:rotate(90deg);
+
+}
+
+
+.lastchimp {
+	display: block;
+	width: 30%;
+	height: 30%;
+	position: absolute;
+	z-index: 30;
+	left: 35%;
+	top:25%;
+}
+
+.lastchimp img {
+	width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+
+
+.rulesbox p {
+
+	font-size: 1.2em;
+}
+
+}
+
+
+

@@ -1,0 +1,10 @@
+
+<<> Random  > (Array) NO re peat num ber.  !!!
+
+(Same for options on each scenario)
+
+
+make 10 more scenarios
+
+(Math.random()* x)
+

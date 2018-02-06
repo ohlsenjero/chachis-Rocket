@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+		Chachis Rocket
+	</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+
+	<script src="js/vendor/jquery-1.9.0.min.js"></script>
+	
+	<script src="js/vendor/jquery.rotate.1-1"></script>
+
+	<script src="js/vendor/jquery.transit.min.js"></script>
+
+   	<script src="js/main.js"></script>
+</head>
+<body onload="animate();">
+	<div class="wrapper">
+
+<div class="intro">
+<img src="img/intro.png" alt="" />
+	<div class="introbuttons">
+
+		<button class="play">Play</button>
+		<button class="rulesbutton">How to</button>
+
+
+	</div>
+
+	<div class="rules">
+		
+	<div class="rulesbox">
+		
+			<p>Mika, Loca & Bleam are three chimps, and they have been left alone in a rocket with the hope that it will bring them back to their planet...  <br />
+			...Please help them get back home to the kingdom of the chachi-chimps. <br />
+			To do so, you have to click on the right word according to the image on the screen. But beware, they can only speak Español!</p>
+	</div>
+
+	</div>
+
+</div>
+
+
+	<div class="playagainwin">
+		<a class="reload" href="index.html">Reload</a>
+		<button class="again" >Play Again</button>
+			<div class="lastchimp">
+			<img src="img/chimpwin.png" alt="" />
+			</div>
+	</div>
+
+	<div class="playagainloose">
+		<a class="reload" href="index.html">Reload</a>
+		<button class="again" >Play Again</button>
+	</div>
+
+	<div class="gamebox">
+
+		<div class="gameplay">
+
+
+
+<div class="screenblock"></div>
+
+			<div id="0" class="arbol question">
+				<img class="imagen" src="img/arbol.png" alt=""  />
+				<ul>
+					<li><button class="wrong">Arbusto</button></li>
+					<li><button class="wrong">Planta</button></li>
+					<li><button class="correct-arbol correct">Arbol</button></li>
+				</ul>
+			</div>
+
+
+			<div id="1" class="casa question">
+				<img class="imagen" src="img/casa.png" alt="" />
+				<ul>
+					<li><button class="correct-casa correct">Casa</button></li>
+					<li><button class="wrong">Cueva</button></li>
+					<li><button class="wrong">Mansion</button></li>
+				</ul>
+			</div>
+
+			<div id="2" class="sombrero question">
+				<img class="imagen" src="img/sombrero.png" alt="" />
+				<ul>
+					<li><button class="wrong">Gorro</button></li>
+					<li><button class="correct-sombrero correct">Sombrero</button></li>
+					<li><button class="wrong">Zapato</button></li>
+				</ul>
+			</div>
+
+
+
+			<div id="3" class="cielo question">
+				<img class="imagen" src="img/cielo.png" alt="" />
+				<ul>
+					<li><button class="wrong">Espacio</button></li>
+					<li><button class="wrong">Suelo</button></li>
+					<li><button class="correct-cielo correct">Cielo</button></li>
+				</ul>
+			</div>
+
+
+			<div id="4" class="avion question">
+				<img class="imagen" src="img/avion.png" alt="" />
+				<ul>
+					<li><button class="wrong">Tren</button></li>
+					<li><button class="wrong">Nave</button></li>
+					<li><button class="correct-avion correct">Avion</button></li>
+				</ul>
+			</div>
+
+			<div id="5" class="helado question">
+				<img class="imagen" src="img/helado.png" alt="" />
+				<ul>
+					<li><button class="wrong">Queque</button></li>
+					<li><button class="correct-helado correct">Helado</button></li>
+					<li><button class="wrong">Postre</button></li>
+					
+				</ul>
+			</div>
+
+			<div id="6" class="vestido question">
+				<img class="imagen" src="img/vestido.png" alt="" />
+				<ul>
+					<li><button class="correct-vestido correct">Vestido</button></li>
+					<li><button class="wrong">Falda</button></li>
+					<li><button class="wrong">Pantalon</button></li>
+					
+				</ul>
+			</div>
+
+			<div id="7" class="caballo question">
+				<img class="imagen" src="img/caballo.png" alt="" />
+				<ul>
+					<li><button class="wrong">Jirafa</button></li>
+					<li><button class="correct-caballo correct">Caballo</button></li>
+					<li><button class="wrong">Camello</button></li>
+					
+				</ul>
+			</div>
+
+			<div id="8" class="pajaro question">
+				<img class="imagen" src="img/pajaro.png" alt="" />
+				<ul>
+					<li><button class="wrong">Bicho</button></li>
+					<li><button class="wrong">Insecto</button></li>
+					<li><button class="correct-pajaro correct">Pajaro</button></li>
+				</ul>
+			</div>
+
+
+			<div id="9" class="perro question">
+				<img class="imagen" src="img/perro.png" alt="" />
+				<ul>
+					<li><button class="wrong">Lobo</button></li>
+					<li><button class="correct-perro correct">Perro</button></li>
+					<li><button class="wrong">Burro</button></li>
+					
+				</ul>
+			</div>
+
+			<div id="10" class="cascada question">
+				<img class="imagen" src="img/cascada.png" alt="" />
+				<ul>
+					<li><button class="correct-cascada correct">Cascada</button></li>
+					<li><button class="wrong">Rio</button></li>
+					<li><button class="wrong">Muro</button></li>
+					
+				</ul>
+			</div>
+
+
+
+
+
+		</div>  <!-- end gameplay -->
+
+
+
+
+
+		<div class="takeoff screen">
+		<canvas id="canvas2"></canvas>
+		<canvas id="canvas"></canvas>
+
+		<div class="rock"></div>
+
+		<div id="rocket">
+		<img class="rocket" src="img/rocketpng.png"  alt="" />
+		<img class="tail" src="img/tail.gif"  alt="" />
+		</div>
+
+		<div class="speedometer">
+			<img class="speedneedle" src="img/speedometer-needle.png" alt="" />
+		</div>
+
+		<div class="distance">
+			
+		</div>
+
+
+		</div>
+
+
+
+		
+
+
+
+
+	</div> <!-- end gamebox -->
+
+			
+	
+	</div><!-- wrapper -->
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
